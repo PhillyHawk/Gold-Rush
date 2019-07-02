@@ -1,7 +1,7 @@
-alert("hi");
+
 //establish target number
 
-var targetNumber = 50;
+var targetNumber = Math.floor(Math.random() * (120-19 + 1) + 19);
 $("#number-to-guess").text(targetNumber);
 
 var counter = 0;
