@@ -39,7 +39,7 @@ h2{
   border:  10px ridge goldenrod;
   position: absolute;
   right:25px;
-  top: 30px;
+  top: 20px;
   width: 150px;
   height: 150px;
 
@@ -48,7 +48,7 @@ h2{
   border:  10px ridge goldenrod;
   position: absolute;
   right:25px;
-  top: 230px;
+  top: 220px;
   width: 150px;
   height: 150px;
 }
@@ -56,13 +56,13 @@ h2{
   border:  10px ridge goldenrod;
   position: absolute;
   right:25px;
-  top: 430px;
+  top: 420px;
   width: 150px;
   height: 150px;
 }
 .instructions{
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left:465px;
   background: rgb(51, 1, 1);
   color: gold;

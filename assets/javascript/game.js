@@ -35,8 +35,7 @@ $(".gold").on("click", function() {
     restartGame();
   
   }
-  
-  else if (counter > targetNumber){
+  else if (counter >= targetNumber){
     lossCount++;
     $("#lossCount").text(lossCount);
     alert("Bankrupt!");
@@ -56,7 +55,7 @@ $(".silver").on("click", function() {
   
   }
   
-  else if (counter > targetNumber){
+  else if (counter >= targetNumber){
     lossCount++;
     $("#lossCount").text(lossCount);
     alert("Bankrupt!");
@@ -76,7 +75,7 @@ $(".bronze").on("click", function() {
   
   }
   
-  else if (counter > targetNumber){
+  else if (counter >= targetNumber){
     lossCount++;
     $("#lossCount").text(lossCount);
     alert("Bankrupt!");
