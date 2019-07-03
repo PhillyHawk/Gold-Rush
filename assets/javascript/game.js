@@ -6,8 +6,6 @@ var silverbar = Math.floor(Math.random() * (12-1 + 1) + 1);
 var bronzebar = Math.floor(Math.random() * (12-1 + 1) + 1);
 var counter = 0;
 
-//var numberOptions = [10, 11];
-//var increment = numberOptions[Math.floor(Math.random())];//
 var winCount = 0
 var lossCount = 0
 
@@ -43,12 +41,13 @@ if (counter === targetNumber){
 
 }
 
-else if (counter > targetNumber){
+else if (counter >= targetNumber){
   lossCount++;
   $("#lossCount").text(lossCount);
   alert("Bankrupt!");
   restartGame();
 }
+
 
 
 
