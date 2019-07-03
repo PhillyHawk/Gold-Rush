@@ -4,19 +4,23 @@ var goldbar = 0
 var silverbar = 0
 var bronzebar = 0
 var counter = 0;
+var targetNumber;
 
-var targetNumber = Math.floor(Math.random() * (120-19 + 1) + 19);
+function resetBars() {
+  targetNumber = Math.floor(Math.random() * (120-19 + 1) + 19);
 $("#targetScore").text(targetNumber)
 
  goldbar = Math.floor(Math.random() * (12-1 + 1) + 1);
  silverbar = Math.floor(Math.random() * (12-1 + 1) + 1);
  bronzebar = Math.floor(Math.random() * (12-1 + 1) + 1);
+}
 
 
 
 function restartGame(){
-  $("targetScore").innerHTML = 0;
-  $("currentScore").innerHTML = 0;
+  $("#targetScore").text("0");
+  $("#currentScore").text("0");
+  resetBars();
 }
 
 
@@ -28,7 +32,7 @@ $(".gold").on("click", function() {
     winCount++;
     $("#winCount").text(winCount);
     alert("Jackpot!");
-    //restartGame();
+    restartGame();
   
   }
   
@@ -36,7 +40,7 @@ $(".gold").on("click", function() {
     lossCount++;
     $("#lossCount").text(lossCount);
     alert("Bankrupt!");
-   // restartGame();
+    restartGame();
   }
   });
 
@@ -48,7 +52,7 @@ $(".silver").on("click", function() {
     winCount++;
     $("#winCount").text(winCount);
     alert("Jackpot!");
-    //restartGame();
+    restartGame();
   
   }
   
@@ -56,7 +60,7 @@ $(".silver").on("click", function() {
     lossCount++;
     $("#lossCount").text(lossCount);
     alert("Bankrupt!");
-   // restartGame();
+    restartGame();
   }
   });
 
@@ -68,7 +72,7 @@ $(".bronze").on("click", function() {
     winCount++;
     $("#winCount").text(winCount);
     alert("Jackpot!");
-    //restartGame();
+    restartGame();
   
   }
   
@@ -76,14 +80,12 @@ $(".bronze").on("click", function() {
     lossCount++;
     $("#lossCount").text(lossCount);
     alert("Bankrupt!");
-   // restartGame();
+    restartGame();
   }
   });
 
 
-
 restartGame();
-
 
 
 

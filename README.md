@@ -1,5 +1,6 @@
 # Gold-Rush
-crystal counter
+I ammended the layout/theme of this game to add a more personal spin on this.
+<br /> 
 
 Rules to "Gold Rush"
 
