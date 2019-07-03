@@ -1,13 +1,18 @@
+var winCount = 0
+var lossCount = 0
+var goldbar = 0
+var silverbar = 0
+var bronzebar = 0
+var counter = 0;
+
 var targetNumber = Math.floor(Math.random() * (120-19 + 1) + 19);
 $("#targetScore").text(targetNumber)
 
-var goldbar = Math.floor(Math.random() * (12-1 + 1) + 1);
-var silverbar = Math.floor(Math.random() * (12-1 + 1) + 1);
-var bronzebar = Math.floor(Math.random() * (12-1 + 1) + 1);
-var counter = 0;
+ goldbar = Math.floor(Math.random() * (12-1 + 1) + 1);
+ silverbar = Math.floor(Math.random() * (12-1 + 1) + 1);
+ bronzebar = Math.floor(Math.random() * (12-1 + 1) + 1);
 
-var winCount = 0
-var lossCount = 0
+
 
 function restartGame(){
   $("targetScore").innerHTML = 0;
@@ -17,36 +22,67 @@ function restartGame(){
 
 $(".gold").on("click", function() {
   $(".gold").value = goldbar;
-  counter += goldbar;
+  counter = counter + goldbar;
   $("#currentScore").text(counter);
+  if (counter === targetNumber){
+    winCount++;
+    $("#winCount").text(winCount);
+    alert("Jackpot!");
+    //restartGame();
+  
+  }
+  
+  else if (counter > targetNumber){
+    lossCount++;
+    $("#lossCount").text(lossCount);
+    alert("Bankrupt!");
+   // restartGame();
+  }
   });
 
 
 $(".silver").on("click", function() {
-  counter += silverbar;
+  counter = counter + silverbar;
   $("#currentScore").text(counter);
+  if (counter === targetNumber){
+    winCount++;
+    $("#winCount").text(winCount);
+    alert("Jackpot!");
+    //restartGame();
+  
+  }
+  
+  else if (counter > targetNumber){
+    lossCount++;
+    $("#lossCount").text(lossCount);
+    alert("Bankrupt!");
+   // restartGame();
+  }
   });
 
   
 $(".bronze").on("click", function() {
-  counter += bronzebar;
+  counter = counter + bronzebar;
   $("#currentScore").text(counter);
+  if (counter === targetNumber){
+    winCount++;
+    $("#winCount").text(winCount);
+    alert("Jackpot!");
+    //restartGame();
+  
+  }
+  
+  else if (counter > targetNumber){
+    lossCount++;
+    $("#lossCount").text(lossCount);
+    alert("Bankrupt!");
+   // restartGame();
+  }
   });
 
-if (counter === targetNumber){
-  winCount++;
-  $("#winCount").text(winCount);
-  alert("Jackpot!");
-  restartGame();
 
-}
 
-else if (counter >= targetNumber){
-  lossCount++;
-  $("#lossCount").text(lossCount);
-  alert("Bankrupt!");
-  restartGame();
-}
+restartGame();
 
 
 
