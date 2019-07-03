@@ -60,3 +60,16 @@ h2{
   width: 150px;
   height: 150px;
 }
+.instructions{
+  position: absolute;
+  bottom: 15px;
+  left:465px;
+  background: rgb(51, 1, 1);
+  color: gold;
+  border: 3px ridge goldenrod;
+  padding: 2px;
+  font-size: 15px;
+}
+em{
+  font-style: italic;
+}
