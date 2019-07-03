@@ -5,52 +5,58 @@ h1{
   color: rgb(51, 1, 1);
   text-shadow: -4px -4px 0 gold,  
   1px -1px 0 #000,
-  -1px 1px 0 #000,
+  -1px 1px 0 gold,
    1px 1px 0 #000;
 
   font-family: 'Lobster', cursive;
   font-size: 200px;
   position: absolute;
-  top: 150;
-  left: 225px;
+  top: 80px;
+  left: 200px;
 }
 #scorebox{
   background: rgb(51, 1, 1);
-  border: 3px ridge goldenrod;
+  border: 15px ridge goldenrod;
   position: absolute;
-  bottom: 30px;
+  font-size: 25px;
+  padding: 15px;
+  top: 330px;
   left: 500px;
 }
   
 h2{
   color: gold;
   font-size: 30px;
+  margin-top: 3px;
+  font-family: 'Cinzel', serif;
 }
 
-
+#lossCount{
+  color:red;
+}
 
 .gold {
-  border:  3px ridge goldenrod;
+  border:  10px ridge goldenrod;
   position: absolute;
   right:25px;
-  top: 0;
-  width: 200px;
-  height: 200px;
+  top: 30px;
+  width: 150px;
+  height: 150px;
 
 }
 .silver {
-  border:  3px ridge goldenrod;
+  border:  10px ridge goldenrod;
   position: absolute;
   right:25px;
-  top: 200px;
-  width: 200px;
-  height: 200px;
+  top: 230px;
+  width: 150px;
+  height: 150px;
 }
 .bronze {
-  border:  3px ridge goldenrod;
+  border:  10px ridge goldenrod;
   position: absolute;
   right:25px;
-  top: 400px;
-  width: 200px;
-  height: 200px;
+  top: 430px;
+  width: 150px;
+  height: 150px;
 }
