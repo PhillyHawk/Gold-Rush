@@ -14,6 +14,7 @@ $("#targetScore").text(targetNumber)
  goldbar = Math.floor(Math.random() * (12-1 + 1) + 1);
  silverbar = Math.floor(Math.random() * (12-1 + 1) + 1);
  bronzebar = Math.floor(Math.random() * (12-1 + 1) + 1);
+ counter = 0;
 }
 
 
